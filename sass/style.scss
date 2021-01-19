@@ -1,0 +1,40 @@
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+.no-gutters{
+padding-right: 0px !important;
+padding-left: 0px !important;
+}
+
+.portada-container{
+text-align: center;
+width: 100%;
+position: relative !important;
+}
+
+.container{
+padding-top: 250px;
+}
+
+body{
+    background-color: rgb(221, 215, 215);
+    height: 100%;
+}
+
+.text-container{
+    color: #eae0d5;
+}
+
+h1{
+-webkit-text-stroke: 1px black;
+ font-family: 'Bebas Neue', cursive;
+ font-size: 3rem !important;
+ }
+
+p{
+font-family: 'Roboto', sans-serif;
+font-size: 1.5rem;
+text-transform: uppercase;
+}
+
