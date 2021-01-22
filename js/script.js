@@ -14,11 +14,7 @@ function mensaje () {
 //lamo a la funcion:
 mensaje()*/
 
-
-
 /*
-
-
 let autoMarca = prompt("Ingrese la marca de su vehículo");
 let autoModelo = prompt("Ingrese el modelo de su vehículo");
 let autoAnio = prompt("Ingrese el año de su vehículo");
@@ -38,9 +34,11 @@ function Auto(autoMarca, autoModelo, autoAnio, autoDominio){
 
 let auto1 = new Auto(autoMarca, autoModelo, autoAnio, autoDominio);
 
+
+console.log("Auto1: ", auto1.getDatosDelAuto());
+
+
+
 //let auto1 = new Auto("Rambler", "Ambassador", 1966, "SLY-052");
 
-
-console.log("Auto1: ", auto1.getDatosDelAuto());*/
-
-
+*/
