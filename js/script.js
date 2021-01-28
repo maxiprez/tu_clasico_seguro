@@ -1,3 +1,4 @@
+
 const IMPORTADO_SI = "SI";
 const IMPORTADO_NO = "NO";
 let autoMarca = prompt("Ingrese la marca de su vehículo");
@@ -31,9 +32,27 @@ function Auto(autoMarca, autoModelo, autoAnio, autoDominio, autoImportado){
 let auto1 = new Auto(autoMarca, autoModelo, autoAnio, autoDominio, autoImportado);
 
 
-
+// Devuelve los datos ingresados:
 console.log("Auto1: ", auto1.getDatosDelAuto());
 console.log("Paga patente: ", auto1.getPagaPatente());
 
 
 
+// Arrays:
+
+let arrayAuto = [autoMarca, autoModelo, autoAnio, autoDominio, autoImportado];
+
+let arrayMiAutoClasico = ["Rambler", "Ambassador", 1966, "SLY-512", "No"];
+
+console.log(arrayMiAutoClasico[0]); // Indica por console la marca del auto
+
+console.log(arrayAuto.length); // Indica el largo del primer array
+
+// Muestra si se ingresó la misma marca del auto del primer array o no
+
+if (arrayAuto[0] == arrayMiAutoClasico[0]) {
+    alert("Usted ha ingresado la misma marca de auto que muestra el console log");
+  }
+else {
+    alert ("Usted ingresó " + arrayAuto[0]);
+}
