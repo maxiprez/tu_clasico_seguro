@@ -1,3 +1,10 @@
+let marca = prompt("Ingrese la marca de su vehículo:");
+let modelo = prompt("Ingrese el modelo de su vehículo:");
+let anio = prompt("Ingrese el año de su vehículo:");
+let dominio = prompt("Ingrese el dominio de su vehículo:");
+let importado = prompt("Su clásico es importado?:");
+const IMPORTADO_SI = "SI";
+const IMPORTADO_NO = "NO";
 
 
 function ListaDeAutos(){
@@ -25,9 +32,23 @@ function Auto(marca, modelo, anio, dominio, importado){
     this.anio = anio;
     this.dominio = dominio;
     this.importado = importado;
+
+
+    if(anio < 2001){
+        if(importado.toUpperCase() === IMPORTADO_SI){
+            alert("Su vehículo paga patente");
+    
+        } else{
+            alert("Su vehículo no paga patente");
+        };
+    } else{
+        alert("Su vehículo paga patente");
+    }
+   
+
     }
 
-    let nuevoAuto = new Auto("Rambler", "Ambassador", 1966, "SLY-052", "No");
+    let nuevoAuto = new Auto(marca, modelo, anio, dominio, importado);
 
     let nuevaListaDeAutos = new ListaDeAutos();
 
@@ -38,6 +59,6 @@ function Auto(marca, modelo, anio, dominio, importado){
     console.log(nuevaListaDeAutos.listaAutos);
 
 
-localStorage.setItem("Patente", "SLY-052");
+localStorage.setItem("Patente", dominio);
 
-let resultado = localStorage.getItem("valorRandom");
+let resultado = localStorage.getItem("Patente");
