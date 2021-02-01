@@ -38,6 +38,6 @@ function Auto(marca, modelo, anio, dominio, importado){
     console.log(nuevaListaDeAutos.listaAutos);
 
 
-localStorage.setItem("valorRandom", "1231321");
+localStorage.setItem("Patente", "SLY-052");
 
 let resultado = localStorage.getItem("valorRandom");
