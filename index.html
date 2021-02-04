@@ -63,7 +63,7 @@
         <div class="form-group mt-4">
           <label for="añoAuto">Año:</label>
           <select id="añoAuto" class="form-select" required aria-label="select example">
-            <option value="">SELECCIONE EL AÑO DEL AUTO</option>
+            <option selected disabled value="">SELECCIONE EL AÑO DEL AUTO</option>
             <option value="1900">1900</option>
             <option value="1901">1901</option>
             <option value="1902">1902</option>
@@ -171,28 +171,30 @@
           <div class="invalid-feedback">Por favor, completa este campo.</div>
         </div>
 
-        <div class="mt-4">
-        <label for="">¿Su auto es importado?</label>
-        <div class="form-check">
-          <input type="radio" class="form-check-input" id="autoImportadoSi" name="radio-stacked" required>
-          <label class="form-check-label" for="validationFormCheck2">Si</label>
+        <div id="importado" class="mt-4">
+          <label for="">¿Su auto es importado?</label>
+          <div class="form-check">
+            <input id="importadoSi" type="radio" class="form-check-input" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck2">Si</label>
+          </div>
+          <div class="form-check mb-3">
+            <input id="importadoNo" type="radio" class="form-check-input" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck3">No</label>
+            <div class="invalid-feedback">Seleccione "Si" o "No"</div>
+            <div class="valid-feedback">Válido.</div>
+          </div>
         </div>
-        <div class="form-check mb-3">
-          <input type="radio" class="form-check-input" id="autoImportadoNo" name="radio-stacked" required>
-          <label class="form-check-label" for="validationFormCheck3">No</label>
-          <div class="invalid-feedback">Seleccione "Si" o "No"</div>
-        </div>
-      </div>
 
       <div class="col-12 mt-4">
-        <label for="validationCustom04" class="form-label">Planes disponibles:</label>
-        <select class="form-select" id="validationCustom04" required>
+        <label for="planes" class="form-label">Planes disponibles:</label>
+        <select id="planes" class="form-select" required>
           <option selected disabled value="">Elegí un plan:</option>
-          <option>Básico (Responsabilidad Civil)</option>
-          <option>Medio (Terceros Completo)</option>
-          <option>Full (Contra Todo Riesgo)</option>
+          <option value="basico">Básico (Responsabilidad Civil)</option>
+          <option value="medio">Medio (Terceros Completo)</option>
+          <option value="full">Full (Contra Todo Riesgo)</option>
         </select>
         <div class="invalid-feedback">Seleccione un plan.</div>
+        <div class="valid-feedback">Válido.</div>
       </div>
 
       <div class="titulo-h2">
