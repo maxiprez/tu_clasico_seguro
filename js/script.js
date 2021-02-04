@@ -56,6 +56,8 @@ function validar() {
         swal ( "Error!" ,  "Ingrese un correo válido" ,  "error" );
         return false;
     }
+    swal("Enviado!", "Se ha enviado el formulario con tus datos correctamente", "success");
+    return false;
 }
 
 
