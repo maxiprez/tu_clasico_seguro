@@ -1,10 +1,37 @@
-let marca = prompt("Ingrese la marca de su vehículo:");
+/*let marca = prompt("Ingrese la marca de su vehículo:");
 let modelo = prompt("Ingrese el modelo de su vehículo:");
 let anio = prompt("Ingrese el año de su vehículo:");
 let dominio = prompt("Ingrese el dominio de su vehículo:");
-let importado = prompt("Su clásico es importado?:");
-const IMPORTADO_SI = "SI";
-const IMPORTADO_NO = "NO";
+let importado = prompt("Su clásico es importado?:");*/
+
+//Datos del vehículo:
+let marca = document.getElementById("marca").value;
+let modelo = document.getElementById("modelo").value;
+let anio = document.getElementById("añoAuto").value;
+let dominio = document.getElementById("dominio").value;
+
+///////////////////////////////////////////////////////////////////////////////
+
+//Datos personales y de contacto:
+let nombre = document.getElementById("nombre").value;
+let apellidos = document.getElementById("apellidos").value;
+let fechaDeNacimiento = document.getElementById("fechaDeNacimiento").value;
+let dni = document.getElementById("dni").value;
+let provincia = document.getElementById("provincia").value;
+let localidad = document.getElementById("localidad").value;
+let tel = document.getElementById("tel").value;
+let eMail = document.getElementById("eMail").value;
+
+
+//const IMPORTADO_SI = "SI";
+//const IMPORTADO_NO = "NO";
+
+let getData = function() {
+
+    //swal("Good job!", mensajeTexto, "success");
+}
+
+/*
 
 
 function ListaDeAutos(){
@@ -62,3 +89,6 @@ function Auto(marca, modelo, anio, dominio, importado){
 localStorage.setItem("Patente", dominio);
 
 let resultado = localStorage.getItem("Patente");
+
+
+*/

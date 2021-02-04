@@ -35,3 +35,14 @@ p {
   width: 100%;
   height: 100vh;
   background-size: cover; }
+
+.titulo-h2 {
+  font-family: 'Nunito', sans-serif;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 2rem; }
+
+.border-h2 {
+  border-bottom: solid;
+  border-color: #afaeab;
+  border-width: 0.5px; }
