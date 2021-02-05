@@ -106,7 +106,6 @@ function Auto(marca, modelo, anio, dominio, importado){
     } else{
         alert("Su vehículo paga patente");
     }
-   
 
     }
 
