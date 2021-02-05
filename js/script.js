@@ -19,8 +19,8 @@ function validar() {
     let anio = document.getElementById("añoAuto").value;
     let dominio = document.getElementById("dominio").value;
     let nombre = document.getElementById("nombre").value;
-    //let importadoSi = document.getElementById("importadoSi").value;
-    //let importadoNo = document.getElementById("importadoNo").value;
+    let importadoSi = document.getElementById("importadoSi").checked;
+    let importadoNo = document.getElementById("importadoNo").checked;
     let planes = document.getElementById("planes").value;
     //Datos personales y de contacto:   
     let apellidos = document.getElementById("apellidos").value;
@@ -35,7 +35,7 @@ function validar() {
 
     if(marca === "" || modelo ==="" || anio === "" || dominio === "" || apellidos === "" ||
     fechaDeNacimiento === "" || dni === "" || provincia ==="" || localidad === "" || tel === ""
-    || eMail === "" || planes === "") {
+    || eMail === "" || planes === "" || (importadoSi == false && importadoNo == false)) {
        swal ( "Error!" ,  "Todos los campos son obligatorios" ,  "error" );
        return false;
     } else if(nombre.length > 30){
