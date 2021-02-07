@@ -43,7 +43,7 @@
   
     <!--ACÁ EMPIEZA EL FORM-->
         
-      <form action="" id="form" class="was-validated col-4 container-fluid" name="form" onsubmit="return validar();">
+      <form action="" id="form" class="was-validated col-4 container-fluid" name="form" onsubmit="">
         <div class="titulo-h2 text-center" id="tituloVehiculo">
           <h2 class="text-center mt-4 border-h2">Vehículo</h2>
        </div>
@@ -61,8 +61,8 @@
         </div>
         
         <div class="form-group mt-4">
-          <label for="añoAuto">Año:</label>
-          <select id="añoAuto" class="form-select" required aria-label="select example">
+          <label for="año">Año:</label>
+          <select id="año" class="form-select" required aria-label="select example">
             <option selected disabled value="">SELECCIONE EL AÑO DEL AUTO</option>
             <option value="1900">1900</option>
             <option value="1901">1901</option>
@@ -277,17 +277,19 @@
         <div class="valid-feedback">Válido.</div>
         <div class="invalid-feedback">Por favor, completa este campo.</div>
       </div>
-      <div class="text-center"><button type="submit" class="btn btn-primary btn-dark mt-4 mb-4 text" onclick = "validar();">Enviar</button></div>
+      <div class="text-center"><button type="submit" class="btn btn-primary btn-dark mt-4 mb-4 text" onclick = "return allFunctions();">Enviar</button></div>
     </form>
 
    
-    <script src="js/script.js" async defer></script>
+    <script src="js/validateForm.js" async defer></script>
+    <script src="js/object.js" async defer></script>
+    <script src="js/functions.js" async defer></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
    <!--sweetAlert-->
    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
- 
-</body>
+  </body>
 </html>
