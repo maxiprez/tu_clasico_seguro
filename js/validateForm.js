@@ -8,7 +8,7 @@ function validar() {
  let dominio = document.getElementById("dominio").value;
  let nombre = document.getElementById("nombre").value;
  let importado = document.getElementById("importado").value;
- //let importadoNo = document.getElementById("importadoNo").checked;
+ 
  //let planes = document.getElementById("planes").value;
  
  //Datos personales y de contacto:   
@@ -26,7 +26,7 @@ function validar() {
 
     if(marca === "" || modelo ==="" || anio === "" || dominio === "" || apellidos === "" ||
     edad === "" || dni === "" || provincia ==="" || localidad === "" || tel === ""
-    || eMail === "" || planes === "" || importado === "") {
+    || eMail === "" || importado === "") {
        swal ( "Error!" ,  "Todos los campos son obligatorios" ,  "error" );
        return false;
     } else if(nombre.length > 30){
@@ -66,7 +66,8 @@ const DOMstrings = {
     stepFormPanelClass: 'multisteps-form__panel',
     stepFormPanels: document.querySelectorAll('.multisteps-form__panel'),
     stepPrevBtnClass: 'js-btn-prev',
-    stepNextBtnClass: 'js-btn-next' };
+    stepNextBtnClass: 'js-btn-next'
+ };
   
   
   const removeClasses = (elemSet, className) => {
@@ -209,6 +210,7 @@ const DOMstrings = {
     });
   };
   
+  /*
   //changing animation
   const animationSelect = document.querySelector('.pick-animation__select');
   
@@ -216,4 +218,4 @@ const DOMstrings = {
     const newAnimationType = animationSelect.value;
   
     setAnimationType(newAnimationType);
-  });
+  });*/
