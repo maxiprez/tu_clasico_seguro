@@ -7,13 +7,13 @@ function validar() {
  let anio = document.getElementById("año").value;
  let dominio = document.getElementById("dominio").value;
  let nombre = document.getElementById("nombre").value;
- let importadoSi = document.getElementById("importadoSi").checked;
- let importadoNo = document.getElementById("importadoNo").checked;
- let planes = document.getElementById("planes").value;
+ let importado = document.getElementById("importado").value;
+ //let importadoNo = document.getElementById("importadoNo").checked;
+ //let planes = document.getElementById("planes").value;
  
  //Datos personales y de contacto:   
  let apellidos = document.getElementById("apellidos").value;
- let fechaDeNacimiento = document.getElementById("fechaDeNacimiento").value;
+ let edad = document.getElementById("edad").value;
  let dni = document.getElementById("dni").value;
  let provincia = document.getElementById("provincia").value;
  let localidad = document.getElementById("localidad").value;
@@ -25,8 +25,8 @@ function validar() {
     expresion = /\w+@\w+\.+[a-z]/;
 
     if(marca === "" || modelo ==="" || anio === "" || dominio === "" || apellidos === "" ||
-    fechaDeNacimiento === "" || dni === "" || provincia ==="" || localidad === "" || tel === ""
-    || eMail === "" || planes === "" || (importadoSi == false && importadoNo == false)) {
+    edad === "" || dni === "" || provincia ==="" || localidad === "" || tel === ""
+    || eMail === "" || planes === "" || importado === "") {
        swal ( "Error!" ,  "Todos los campos son obligatorios" ,  "error" );
        return false;
     } else if(nombre.length > 30){

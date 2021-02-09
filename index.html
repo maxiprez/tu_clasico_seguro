@@ -208,15 +208,13 @@
                   </div>
                   <div class="form-row mt-4">
                     <div class="col-12 col-sm-6">
-                      <label for="" class="multisteps-form__input form-control">¿Su auto es importado?</label>
-                      
-                      
+                      <label for="importado" class="multisteps-form__input form-control">¿Su auto es importado?</label>
                     </div>
                     <div class="col-12 col-sm-6 mt-4 mt-sm-0">
-                      <select name="" id="" class="multisteps-form__input form-control" required>
+                      <select name="importado" id="importado" class="multisteps-form__input form-control" required>
                         <option selected disabled value="">Seleccione "Si" o "No"</option>
-                        <option value="si">Si</option>
-                        <option value="no">No</option>
+                        <option value="importadoSi">Si</option>
+                        <option value="importadoNo">No</option>
                       </select>
                       <div class="valid-feedback">Válido.</div>
                       <div class="invalid-feedback">Por favor, completa este campo.</div>
@@ -238,7 +236,7 @@
                       <div class="invalid-feedback">Por favor, completa este campo.</div>
                     </div>
                     <div class="col-12 col-sm-6 mt-4 mt-sm-0">
-                      <input id="apellido" class="multisteps-form__input form-control" type="text" placeholder="Apellido" required/>
+                      <input id="apellidos" class="multisteps-form__input form-control" type="text" placeholder="Apellidos" required/>
                       <div class="valid-feedback">Válido.</div>
                       <div class="invalid-feedback">Por favor, completa este campo.</div>
                     </div>
@@ -284,7 +282,7 @@
                       <div class="invalid-feedback">Por favor, completa este campo.</div>
                     </div>
                     <div class="col-6 col-sm-3 mt-4 mt-sm-0">
-                      <input class="multisteps-form__input form-control" type="text" placeholder="Localidad" required/>
+                      <input id="localidad" class="multisteps-form__input form-control" type="text" placeholder="Localidad" required/>
                       <div class="valid-feedback">Válido.</div>
                       <div class="invalid-feedback">Por favor, completa este campo.</div>
                     </div>
@@ -375,7 +373,7 @@
                   </div>
                   <div class="button-row d-flex mt-4">
                     <button class="btn btn-dark js-btn-prev" type="button" title="Prev">Anterior</button>
-                    <button class="btn btn-success ml-auto" type="button" title="Send" onclick="capturar();">Enviar</button>
+                    <button class="btn btn-success ml-auto" type="button" title="Send" onclick="allFunctions();">Enviar</button>
                   </div>
                 </div>
               </div>
