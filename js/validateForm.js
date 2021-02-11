@@ -8,9 +8,7 @@ function validar() {
  let dominio = document.getElementById("dominio").value;
  let nombre = document.getElementById("nombre").value;
  let importado = document.getElementById("importado").value;
- 
- //let planes = document.getElementById("planes").value;
- 
+   
  //Datos personales y de contacto:   
  let apellidos = document.getElementById("apellidos").value;
  let edad = document.getElementById("edad").value;
