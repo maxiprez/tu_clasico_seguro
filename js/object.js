@@ -1,5 +1,3 @@
-
-
 let baseDatosAutos = [];//Array que suma los autos
 let autoInfo = JSON.parse(localStorage.getItem("autoInfo"));
     

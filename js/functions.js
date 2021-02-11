@@ -1,4 +1,3 @@
-
 function allFunctions(){
     validar();
     capturar();
