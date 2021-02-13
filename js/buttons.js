@@ -13,18 +13,16 @@ $( "#formPersonal" ).keypress(function(event){
     }
 });
 
-//Botón enviar:
-/*$( "#formMessage" ).keypress(function(event){
-    if(event.keyCode == 13){
-        $("#send").click();
-        console.log("Se envió la info");
-    }
-});*/
-
-
-
-
-
+//Botón enviar disabled si no está el checkbox activo
+    $('#submit').prop("disabled", true);
+    
+    $("#defaultCheck1").click(function(){
+        if($(this).is(":checked")){
+            $("#submit").attr("disabled", false);            
+        } else{      
+              $("#submit").attr("disabled",true);
+        }
+           });
 
 //Disabled el primer boton de siguiente
 $(document).ready(function(){
@@ -71,3 +69,4 @@ $(document).ready(function(){
             $("#messageInfoButton").attr("disabled",true);
     })
 });
+

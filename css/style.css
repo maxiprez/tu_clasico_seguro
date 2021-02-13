@@ -212,8 +212,5 @@ body a {
 ul li {
   font-size: 15px; }
 
-.fa-check-circle {
-  color: green; }
-
-.fa-times-circle {
-  color: red; }
+.form-check-label {
+  color: #272525 !important; }
