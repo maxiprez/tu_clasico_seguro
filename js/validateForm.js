@@ -6,10 +6,10 @@ function validar() {
  let modelo = document.getElementById("modelo").value;
  let anio = document.getElementById("año").value;
  let dominio = document.getElementById("dominio").value;
- let nombre = document.getElementById("nombre").value;
  let importado = document.getElementById("importado").value;
    
- //Datos personales y de contacto:   
+ //Datos personales y de contacto:
+ let nombre = document.getElementById("nombre").value;
  let apellidos = document.getElementById("apellidos").value;
  let edad = document.getElementById("edad").value;
  let dni = document.getElementById("dni").value;
@@ -27,7 +27,7 @@ function validar() {
     edad === "" || dni === "" || provincia ==="" || localidad === "" || tel === ""
     || eMail === "" || importado === "") {
     
-       //swal ( "Error!" ,  "Todos los campos son obligatorios" ,  "error" );
+       swal ( "Error!" ,  "Todos los campos son obligatorios" ,  "error" );
        return false;
     } else if(nombre.length > 30){
         swal ( "Error!" ,  "El nombre es muy largo" ,  "error" );
