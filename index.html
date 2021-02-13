@@ -76,16 +76,16 @@
           <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
             <div class="multisteps-form__progress">
               <button class="multisteps-form__progress-btn js-active" type="button" title="Info Vehiculo">Vehículo</button>
-              <button class="multisteps-form__progress-btn" type="button" title="Info Personal">Informacion Personal</button>
-              <button class="multisteps-form__progress-btn" type="button" title="Plan">Plan</button>
-              <button class="multisteps-form__progress-btn" type="button" title="Mensaje">Mensaje</button>
+              <button id="personalInfoButton" class="multisteps-form__progress-btn" type="button" title="Info Personal">Informacion Personal</button>
+              <!--<button class="multisteps-form__progress-btn" type="button" title="Plan">Plan</button>-->
+              <button id="messageInfoButton" class="multisteps-form__progress-btn" type="button" title="Mensaje">Mensaje</button>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-lg-8 m-auto">
             <form id="form" class="multisteps-form__form was-validated">
-              <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+              <div id="formCar" class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
                 <h3 class="multisteps-form__title">Info del Vehículo</h3>
                 <div class="multisteps-form__content">
                   <div class="form-row mt-4">
@@ -211,13 +211,14 @@
                   </div>
                   <div class="form-row mt-4">
                     <div class="col-12 col-sm-6">
-                      <label for="importado" class="multisteps-form__input form-control">¿Su auto es importado?</label>
+                      <label for="importado" class="multisteps-form__input form-control">Seleccione su tipo de auto:</label>
                     </div>
                     <div class="col-12 col-sm-6 mt-4 mt-sm-0">
                       <select id="importado" class="multisteps-form__input form-control" required>
-                        <option selected disabled value="">Seleccione "Si" o "No"</option>
-                        <option value="importadoSi">Si</option>
-                        <option value="importadoNo">No</option>
+                        <option selected disabled value="">Seleccione el origen de su auto</option>
+                        <option value="nacional">Nacional</option>
+                        <option value="americano">Americano</option>
+                        <option value="europeo">Europeo</option>
                       </select>
                       <div class="valid-feedback">Válido.</div>
                       <div class="invalid-feedback">Por favor, completa este campo.</div>
@@ -229,7 +230,7 @@
                 </div>
               </div>
 
-              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+              <div id="formPersonal" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
                 <h3 class="multisteps-form__title">Personal</h3>
                 <div class="multisteps-form__content">
                   <div class="form-row mt-4">
@@ -246,7 +247,7 @@
                   </div>
                   <div class="form-row mt-4">
                     <div class="col-6 col-sm-3 mt-4 mt-sm-0">
-                      <input id="edad" class="multisteps-form__input form-control" type="text" placeholder="Edad" required/>
+                      <input id="edad" class="multisteps-form__input form-control" type="number" name="quantity" min="0" max="99" placeholder="Edad" required maxlength="2"/>
                       <div class="valid-feedback">Válido.</div>
                       <div class="invalid-feedback">Por favor, completa este campo.</div>
                     </div>
@@ -303,13 +304,13 @@
                     </div>
                   </div>
                   <div class="button-row d-flex mt-4">
-                    <button class="btn btn-dark js-btn-prev" type="button" title="Prev">Anterior</button>
-                      <button class="btn btn-dark ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                    <button id="atras1" class="btn btn-dark js-btn-prev" type="button" title="Prev">Anterior</button>
+                      <button id="siguiente2" class="btn btn-dark ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
                   </div>
                 </div>
               </div>
 
-              <div class="multisteps-form__panel shadow p-4 rounded bg-white container-cards col-12" data-animation="scaleIn">
+              <!--<div class="multisteps-form__panel shadow p-4 rounded bg-white container-cards col-12" data-animation="scaleIn">
                 <h3 class="multisteps-form__title">Elige Un Plan</h3>
                 <div class="multisteps-form__content">
                   <div class="card-deck mb-3 text-center">
@@ -317,6 +318,7 @@
                       <div class="card-header">
                         <h4 class="my-0 font-weight-normal">Básico</h4>
                       </div>
+                      <input type="radio">
                       <div class="card-body d-flex flex-column">
                         <h5 class="card-title pricing-card-title">Resp. Civil</h5>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -362,21 +364,21 @@
                   <div class="row">
                     <div class="button-row d-flex mt-4 col-12">
                       <button class="btn btn-dark js-btn-prev" type="button" title="Prev">Anterior</button>
-                      <button class="btn btn-dark ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                      <button id="siguiente3" class="btn btn-dark ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>-->
 
-              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+              <div id="formMessage" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
                 <h3 class="multisteps-form__title">Consultas o sugerencias</h3>
                 <div class="multisteps-form__content">
                   <div class="form-row mt-4">
                     <textarea class="multisteps-form__textarea form-control" placeholder="Escribinos si tenés alguna duda"></textarea>
                   </div>
                   <div class="button-row d-flex mt-4">
-                    <button class="btn btn-dark js-btn-prev" type="button" title="Prev">Anterior</button>
-                    <button id="send" class="btn btn-success ml-auto" type="submit" title="Send" onclick="allFunctions();">Enviar</button>
+                    <button id="atras2" class="btn btn-dark js-btn-prev" type="button" title="Prev">Anterior</button>
+                    <button id="send" class="btn btn-success ml-auto" type="submit" title="Send" onclick="allFunctions();">Solicitar Cotización</button>
                   </div>
                 </div>
               </div>

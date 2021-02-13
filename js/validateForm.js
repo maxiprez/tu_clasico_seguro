@@ -18,6 +18,7 @@ function validar() {
  let tel = document.getElementById("tel").value;
  let eMail = document.getElementById("eMail").value;
 
+
     
 
     expresion = /\w+@\w+\.+[a-z]/;
@@ -25,7 +26,8 @@ function validar() {
     if(marca === "" || modelo ==="" || anio === "" || dominio === "" || apellidos === "" ||
     edad === "" || dni === "" || provincia ==="" || localidad === "" || tel === ""
     || eMail === "" || importado === "") {
-       swal ( "Error!" ,  "Todos los campos son obligatorios" ,  "error" );
+    
+       //swal ( "Error!" ,  "Todos los campos son obligatorios" ,  "error" );
        return false;
     } else if(nombre.length > 30){
         swal ( "Error!" ,  "El nombre es muy largo" ,  "error" );
@@ -47,6 +49,10 @@ function validar() {
     else if(!expresion.test(eMail)){
         swal ( "Error!" ,  "Ingrese un correo válido" ,  "error" );
         return false;
+    }
+    else if(edad < 18){
+      swal ( "Error!" ,  "Debe ser mayor de 18 años" ,  "error" );
+      return false;
     }
     
     swal("Enviado!", "Se ha enviado el formulario con tus datos correctamente", "success");
