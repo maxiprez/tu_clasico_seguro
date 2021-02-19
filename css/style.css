@@ -1,5 +1,4 @@
 html {
-  scroll-behavior: smooth;
   height: 100%; }
 
 .no-gutters {
@@ -18,6 +17,9 @@ html {
 .text-container {
   color: #eae0d5; }
 
+.card-group-container {
+  margin-top: 15rem; }
+
 section h1 {
   font-family: 'Bebas Neue', cursive;
   font-size: 3rem !important; }
@@ -32,6 +34,27 @@ section p {
   width: 100%;
   height: 100vh;
   background-size: cover; }
+
+.caracteristicas-principales {
+  margin-bottom: 17rem;
+  margin-top: 15rem; }
+
+.caracteristicas-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.1rem;
+  margin-top: 5rem; }
+
+.text-list {
+  font-size: 1.2rem !important; }
+
+.text-list-check {
+  font-size: 1.2rem !important; }
+
+ul {
+  list-style: none; }
+
+ul i {
+  color: #007bff; }
 
 * {
   margin: 0;

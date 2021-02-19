@@ -37,8 +37,8 @@
         <div class="col-12 col-md-6 pb-5 order-2 order-sm-2">
           <h1 class="font-weight-bold mb-3 mt-5 display-3 text-container animate__animated animate__fadeInLeft animate__delay-0.5s">Tu Clásico Seguro</h1>
           <p class="lead text-container animate__animated animate__fadeIn animate__delay-0.5s">Aquí podrás encontrar el seguro que mejor se adapte a tu clásico.</p>
-          <div class=" d-flex mt-3 mb-1">
-            <a class="btn btn-dark btn-raised text-uppercase btn-lg  mt-md-3 animate__animated animate__fadeIn animate__delay-0.5s" href="#header-title" role="button">Cotizar ahora</a>
+          <div class="d-flex mt-3 mb-1">
+            <a id="button1" class="btn btn-dark btn-raised text-uppercase btn-lg  mt-md-3 animate__animated animate__fadeIn animate__delay-0.5s" href="#header-title" role="button">Cotizar ahora</a>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
   </section>
 
 
- <div class="card-group container mt-4">
+ <div class="card-group container card-group-container">
   <div class="col-sm-4 card-wrapper card-style">
     <img src="images/car-crash-solid.svg" class="card-img-top rounded-circle circle-image" alt="...">
     <div class="card-body">
@@ -66,13 +66,33 @@
     </div>
   </div>
 </div>
+<section>
+  <div class="caracteristicas-principales">
+    <h3 class="caracteristicas-title text-center mb-4">Características Requeridas</h3>
+    <div class="listados-caracteristicas container-fluid row d-flex justify-content-around">
+      <div class="mt-4">
+        <ul>
+          <div class="row mb-4"><i class="fas fa-check pr-4 text-list-check"></i> <li class="text-list">Antiguedad, a partir del año N-30 (N= Año en curso).</li></div>
+          <div class="row mb-4"><i class="fas fa-check pr-4 text-list-check"></i> <li class="text-list" >Deben conservarse en estado original o restaurado.</li></div>
+          <div class="row mb-4"><i class="fas fa-check pr-4 text-list-check"></i> <li class="text-list">Deben estar patentados.</li></div>
+        </ul>
+      </div>
+      <div class="mt-4">
+        <ul>
+          <div class="row mb-4"><i class="fas fa-check pr-4 text-list-check"></i> <li class="text-list">El uso del vehículo debe ser moderado a bajo</li></div>  
+          <div class="row mb-4"><i class="fas fa-check pr-4 text-list-check"></i> <li class="text-list">Inspección previa obligatoria.</li></div> 
+          <div class="row mb-4"><i class="fas fa-check pr-4 text-list-check"></i> <li class="text-list">Uso particular exclusivamente.</li></div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
 
 
-
- <header class="header">
+ <header id="form-header" class="header">
   <h1 id="header-title" class="header__title">Formulario para Cotización</h1>
 </header>
 <div class="content">
@@ -320,65 +340,6 @@
                 </div>
               </div>
 
-              <!--<div class="multisteps-form__panel shadow p-4 rounded bg-white container-cards col-12" data-animation="scaleIn">
-                <h3 class="multisteps-form__title">Elige Un Plan</h3>
-                <div class="multisteps-form__content">
-                  <div class="card-deck mb-3 text-center">
-                    <div class="card mb-4 box-shadow">
-                      <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Básico</h4>
-                      </div>
-                      <input type="radio">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title pricing-card-title">Resp. Civil</h5>
-                        <ul class="list-unstyled mt-3 mb-4">
-                          <li>Robo o hurto parcial</li><i class="far fa-check-circle"></i>
-                          <li>Remolque y asistencia mecánica</li><i class="far fa-check-circle"></i>
-                          <li>Daño por granizo</li><i class="far fa-times-circle"></i>
-                          <li>Daño por accidente</li><i class="far fa-times-circle"></i>
-                        </ul>
-                        <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary">Contratar</button>
-                      </div>
-                    </div>
-                    <div class="card mb-4 box-shadow">
-                      <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Medio</h4>
-                      </div>
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title pricing-card-title">Contra Terceros</h5>
-                        <ul class="list-unstyled mt-3 mb-4">
-                          <li>Robo o hurto parcial</li><i class="far fa-check-circle"></i>
-                          <li>Remolque y asistencia mecánica</li><i class="far fa-check-circle"></i>
-                          <li>Daño por granizo</li><i class="far fa-check-circle"></i>
-                          <li>Daño por accidente</li><i class="far fa-times-circle"></i>
-                        </ul>
-                        <button type="button" class="mt-auto btn btn-lg btn-block btn-primary">Contratar</button>
-                      </div>
-                    </div>
-                    <div class="card mb-4 box-shadow">
-                      <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Full</h4>
-                      </div>
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title pricing-card-title">Todo Riesgo</h5>
-                        <ul class="list-unstyled mt-3 mb-4">
-                          <li>Robo o hurto parcial</li><i class="far fa-check-circle"></i>
-                          <li>Remolque y asistencia mecánica</li><i class="far fa-check-circle"></i>
-                          <li>Daño por granizo</li><i class="far fa-check-circle"></i>
-                          <li>Daño por accidente</li><i class="far fa-check-circle"></i>
-                        </ul>
-                        <button type="button" class="mt-auto btn btn-lg btn-block btn-primary">Contratar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="button-row d-flex mt-4 col-12">
-                      <button class="btn btn-dark js-btn-prev" type="button" title="Prev">Anterior</button>
-                      <button id="siguiente3" class="btn btn-dark ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
 
               <div id="formMessage" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
                 <h3 class="multisteps-form__title">Consultas o sugerencias</h3>
@@ -444,6 +405,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Scripts locales -->
+    <script src="js/scroll.js" defer></script>
     <script src="js/validateForm.js" defer></script>
     <script src="js/object.js" defer></script>
     <script src="js/functions.js" defer></script>
