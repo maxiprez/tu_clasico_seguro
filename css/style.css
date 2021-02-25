@@ -7,17 +7,16 @@
   background-size: cover;
   min-height: 100vh; }
 
-.header .navbar {
-  background-color: transparent !important; }
-
 .portada-container {
   text-align: center;
   width: 100%;
   position: relative !important; }
 
 .container-header {
-  padding-top: 250px;
-  margin-left: 50px !important; }
+  padding-top: 250px; }
+
+.header .navbar {
+  background-color: transparent !important; }
 
 .text-container-h1 {
   color: #eae0d5;
@@ -32,27 +31,6 @@
 
 .card-group-container {
   margin-top: 15rem; }
-
-.caracteristicas-principales {
-  margin-bottom: 17rem;
-  margin-top: 15rem; }
-
-.caracteristicas-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.1rem;
-  margin-top: 5rem; }
-
-.text-list {
-  font-size: 1.2rem !important; }
-
-.text-list-check {
-  font-size: 1.2rem !important; }
-
-ul {
-  list-style: none; }
-
-ul i {
-  color: #007bff; }
 
 * {
   margin: 0;
