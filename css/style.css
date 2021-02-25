@@ -7,6 +7,44 @@
   background-size: cover;
   min-height: 100vh; }
 
+.navbar {
+  transition: all 0.4s; }
+
+.navbar .nav-link {
+  color: #fff;
+  font-family: 'Roboto', sans-serif !important; }
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none; }
+
+.navbar .navbar-brand {
+  color: #fff; }
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1); }
+
+.navbar.active .nav-link {
+  color: #555; }
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none; }
+
+.navbar.active .navbar-brand {
+  color: #555; }
+
+/* Se cambia el color del navbar en dispositivos moviles */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff; }
+  .navbar .navbar-brand, .navbar .nav-link {
+    color: #555; } }
+
 .portada-container {
   text-align: center;
   width: 100%;
@@ -14,9 +52,6 @@
 
 .container-header {
   padding-top: 250px; }
-
-.header .navbar {
-  background-color: transparent !important; }
 
 .text-container-h1 {
   color: #eae0d5;
@@ -31,6 +66,27 @@
 
 .card-group-container {
   margin-top: 15rem; }
+
+ul {
+  list-style-type: none; }
+
+.caracteristicas-title {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 4rem !important;
+  font-size: 4rem !important; }
+
+.caracteristicas-container {
+  margin-top: 200px;
+  margin-bottom: 200px; }
+
+.list-style {
+  font-size: 1.3rem; }
+
+.check-list {
+  color: #007bff; }
+
+.list-caracteristicas li {
+  font-size: 1rem !important; }
 
 * {
   margin: 0;
