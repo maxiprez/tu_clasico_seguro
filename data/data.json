@@ -1,0 +1,20 @@
+[
+    {
+        "marca": "Rambler",
+        "modelo": "Ambassador",
+        "año": "1966",
+        "tipo": "nacional",
+        "dominio": "SLY056"
+    },
+
+    {
+        "nombre": "Maximiliano",
+        "apellido": "Prez",
+        "edad": "31",
+        "dni": "34493026",
+        "provincia": "Buenos Aires",
+        "localidad": "Ciudad jardín",
+        "telefono": "112648828",
+        "email": "maxi.prez@gmail.com"
+    }
+]
