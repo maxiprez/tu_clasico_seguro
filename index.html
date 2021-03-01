@@ -148,7 +148,7 @@
                   </div>
                   <div class="form-row mt-4">
                     <div class="col-12 col-sm-6">
-                        <select id="año" class="form-select multisteps-form__input form-control" required aria-label="select example">
+                        <select id="anio" class="form-select multisteps-form__input form-control" required aria-label="select example">
                         <option selected disabled value="">Seleccione el año de su auto</option>
                         <option value="1900">1900</option>
                         <option value="1901">1901</option>
@@ -257,10 +257,10 @@
                   </div>
                   <div class="form-row mt-4">
                     <div class="col-12 col-sm-6">
-                      <label for="importado" class="multisteps-form__input form-control">Seleccione su tipo de auto:</label>
+                      <label for="autoImportado" class="multisteps-form__input form-control">Seleccione su tipo de auto:</label>
                     </div>
                     <div class="col-12 col-sm-6 mt-4 mt-sm-0">
-                      <select id="importado" class="multisteps-form__input form-control" required>
+                      <select id="autoImportado" class="multisteps-form__input form-control" required>
                         <option selected disabled value="">Seleccione el origen de su auto</option>
                         <option value="nacional">Nacional</option>
                         <option value="americano">Americano</option>
@@ -366,7 +366,8 @@
                   
                   <div class="button-row d-flex mt-4">
                     <button id="atras2" class="btn btn-dark js-btn-prev" type="button" title="Prev">Anterior</button>
-                    <button id="submit" class="btn btn-success ml-auto" type="submit" title="Send" onclick="allFunctions();">Solicitar Cotización</button>
+                   <button id="submit" class="btn btn-success ml-auto" type="submit" title="Send" onclick="allFunctions();">Solicitar Cotización</button>
+                   <!-- <button id="submit" class="btn btn-success ml-auto" type="submit" title="Send" onclick="">Solicitar Cotización</button>-->
                   </div>
                   <div class="form-check mt-4 checkbox-color text-center">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -421,12 +422,14 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Scripts locales -->
+    <script src="js/ajax.js" defer></script>
     <script src="js/scroll.js" defer></script>
     <script src="js/validateForm.js" defer></script>
     <script src="js/object.js" defer></script>
     <script src="js/functions.js" defer></script>
-    <script src="js/buttons.js" defer></script>
+   <script src="js/buttons.js" defer></script>
     <script src="js/navbar.js" defer></script>
+    
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
