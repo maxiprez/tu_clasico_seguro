@@ -4,9 +4,9 @@ function validar() {
  //Datos del vehículo:
  let marca = document.getElementById("marca").value;
  let modelo = document.getElementById("modelo").value;
- let anio = document.getElementById("año").value;
+ let anio = document.getElementById("anio").value;
  let dominio = document.getElementById("dominio").value;
- let importado = document.getElementById("importado").value;
+ let importado = document.getElementById("autoImportado").value;
    
  //Datos personales y de contacto:
  let nombre = document.getElementById("nombre").value;
@@ -55,8 +55,28 @@ function validar() {
       return false;
     }
     
-    swal("Enviado!", "Se ha enviado el formulario con tus datos correctamente", "success");
-    return false;
+    //swal("Enviado!", "Se ha enviado el formulario con tus datos correctamente", "success");
+    //return false;
+    $.ajax({
+      url: "https://maxiprez.github.io/tu_clasico_seguro/data/data.json",
+      type: "GET",
+      dataType: "json",
+      success: function(datos){
+        
+        console.log(Object.values(datos))
+        //return false;
+         swal("Muy bien!", "Tus datos se han ingresado correctamente!", "success");
+         return false;
+               },
+      error: function(xhr, status, error){
+
+        console.log(xhr);
+        console.log(status);
+        console.log(error);
+
+      }
+     
+});
   
 }
 
