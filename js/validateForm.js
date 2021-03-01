@@ -55,8 +55,30 @@ function validar() {
       return false;
     }
     
-    swal("Enviado!", "Se ha enviado el formulario con tus datos correctamente", "success");
-    return false;
+    //swal("Enviado!", "Se ha enviado el formulario con tus datos correctamente", "success");
+    //return false;
+    $.ajax({
+      url: "https://maxiprez.github.io/tu_clasico_seguro/data/data.json",
+      type: "GET",
+      dataType: "json",
+      success: function(datos){
+        
+        console.log(Object.values(datos))
+        //return false;
+         swal("Muy bien!", "Tus datos se han ingresado correctamente!", "success");
+         return false;
+               },
+      error: function(xhr, status, error){
+
+        console.log(xhr);
+        console.log(status);
+        console.log(error);
+
+      }
+     
+});
+
+
 }
 
 //Formulario
