@@ -4,9 +4,9 @@ function validar() {
  //Datos del vehículo:
  let marca = document.getElementById("marca").value;
  let modelo = document.getElementById("modelo").value;
- let anio = document.getElementById("año").value;
+ let anio = document.getElementById("anio").value;
  let dominio = document.getElementById("dominio").value;
- let importado = document.getElementById("importado").value;
+ let importado = document.getElementById("autoImportado").value;
    
  //Datos personales y de contacto:
  let nombre = document.getElementById("nombre").value;
@@ -77,8 +77,12 @@ function validar() {
       }
      
 });
+<<<<<<< HEAD
 
 
+=======
+  
+>>>>>>> rama_navbar
 }
 
 //Formulario
@@ -236,12 +240,3 @@ const DOMstrings = {
     });
   };
   
-  /*
-  //changing animation
-  const animationSelect = document.querySelector('.pick-animation__select');
-  
-  animationSelect.addEventListener('change', () => {
-    const newAnimationType = animationSelect.value;
-  
-    setAnimationType(newAnimationType);
-  });*/
