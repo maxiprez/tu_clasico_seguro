@@ -82,11 +82,8 @@ ul {
 .list-style {
   font-size: 1.3rem; }
 
-.check-list {
+ul i {
   color: #007bff; }
-
-.list-caracteristicas li {
-  font-size: 1rem !important; }
 
 * {
   margin: 0;

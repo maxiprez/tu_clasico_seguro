@@ -66,7 +66,7 @@ function validar() {
         console.log(Object.values(datos))
         //return false;
          swal("Muy bien!", "Tus datos se han ingresado correctamente!", "success");
-         return false;
+        //return false;
                },
       error: function(xhr, status, error){
 
@@ -77,12 +77,8 @@ function validar() {
       }
      
 });
-<<<<<<< HEAD
 
 
-=======
-  
->>>>>>> rama_navbar
 }
 
 //Formulario

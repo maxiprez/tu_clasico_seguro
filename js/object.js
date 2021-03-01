@@ -13,7 +13,7 @@ let autoInfo = JSON.parse(localStorage.getItem("autoInfo"));
         }
   let  marcaNew = document.getElementById("marca").value;
   let  modeloNew = document.getElementById("modelo").value;
-  let  anioNew = document.getElementById("año").value;
+  let  anioNew = document.getElementById("anio").value;
   let  dominioNew = document.getElementById("dominio").value;
 
   nuevoAuto = new Auto(marcaNew, modeloNew, anioNew, dominioNew); //variable global dentro de la funcion
