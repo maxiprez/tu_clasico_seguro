@@ -5,7 +5,7 @@ El fin del desarrollo de este proyecto es, mostrar que se puede realizar el cont
 
 ## Archivos
 
-Se trató de simplificar la cantidad de archivos de imágenes lo más posible para que el sitio web cargue lo más rápido posible y asi la experiencia de usuario sea buena.
+Se trató de simplificar y comprimir la cantidad de archivos de imágenes lo máximo para que el sitio web cargue lo más rápido posible y asi la experiencia de usuario sea buena.
 
 
 # De código abierto
