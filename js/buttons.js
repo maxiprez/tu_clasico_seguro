@@ -33,6 +33,7 @@ $( document ).ready(function (){
 });
 
  function validarAuto(){
+     
     if( $("#marca").val().length > 0 &&
         $("#modelo").val().length > 0 &&
         $("#anio").val().length > 0 &&
@@ -54,6 +55,7 @@ $( document ).ready(function (){
 });
 
  function validarPersona(){
+     
     if( $("#nombre").val().length > 0 &&
         $("#apellidos").val().length > 0 &&
         $("#edad").val().length > 0 &&
