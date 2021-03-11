@@ -18,7 +18,7 @@ function validar() {
  let tel = document.getElementById("tel").value;
  let eMail = document.getElementById("eMail").value;
 
-
+ let modal = document.getElementById("myModal");
     
 
     expresion = /\w+@\w+\.+[a-z]/;
@@ -51,13 +51,16 @@ function validar() {
         return false;
     }
     else if(edad < 18){
+     modal.hidden = true;
       swal ( "Error!" ,  "Debe ser mayor de 18 años" ,  "error" );
       return false;
     }
     
-    //swal("Enviado!", "Se ha enviado el formulario con tus datos correctamente", "success");
-    //return false;
-    $.ajax({
+    swal("Enviado!", "Se ha enviado el formulario con tus datos correctamente", "success");
+    return false;
+
+
+    /*$.ajax({
       url: "https://maxiprez.github.io/tu_clasico_seguro/data/data.json",
       type: "GET",
       dataType: "json",
@@ -66,7 +69,7 @@ function validar() {
         console.log(Object.values(datos))
         //return false;
          swal("Muy bien!", "Tus datos se han ingresado correctamente!", "success");
-        //return false;
+        return false;
                },
       error: function(xhr, status, error){
 
@@ -76,7 +79,7 @@ function validar() {
 
       }
      
-});
+});*/
 
 
 }

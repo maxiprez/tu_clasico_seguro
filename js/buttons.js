@@ -1,5 +1,6 @@
 //Botones siguiente:
 
+
 $( "#formCar" ).keypress(function(event){
     if(event.keyCode == 13){
         $("#siguiente1").click();
@@ -29,7 +30,7 @@ $( "#formPersonal" ).keypress(function(event){
 
 $( document ).ready(function (){
     validarAuto();
-  $( "#marca, #modelo, #dominio, #autoImportado, #anio" ).change(validarAuto);
+  $( "#marca, #modelo, #dominio, #autoImportado, #anio, #plan" ).change(validarAuto);
 });
 
  function validarAuto(){
@@ -38,6 +39,7 @@ $( document ).ready(function (){
         $("#modelo").val().length > 0 &&
         $("#anio").val().length > 0 &&
         $("#autoImportado").val().length > 0 &&
+        $("#plan").val().length > 0 &&
         $("#dominio").val().length > 0) {
         $( "#siguiente1" ).prop( "disabled", false); 
         $( "#personalInfoButton" ).prop( "disabled", false);  
