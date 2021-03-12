@@ -123,7 +123,6 @@
             <div class="multisteps-form__progress">
               <button class="multisteps-form__progress-btn js-active" type="button" title="Info Vehiculo">Vehículo</button>
               <button id="personalInfoButton" class="multisteps-form__progress-btn" type="button" title="Info Personal">Informacion Personal</button>
-              <!--<button class="multisteps-form__progress-btn" type="button" title="Plan">Plan</button>-->
               <button id="messageInfoButton" class="multisteps-form__progress-btn" type="button" title="Mensaje">Mensaje</button>
             </div>
           </div>
@@ -282,8 +281,7 @@
                   
                   <div class="button-row d-flex mt-4">
                     <button id="atras2" class="btn btn-dark js-btn-prev" type="button" title="Prev">Anterior</button>
-                   <button id="submit" class="btn btn-success ml-auto" type="button" title="Send" onclick="cotizarSeguro()" data-toggle="modal" data-target="#myModal">Solicitar Cotización</button>
-                   <!-- <button id="submit" class="btn btn-success ml-auto" type="submit" title="Send" onclick="">Solicitar Cotización</button>-->
+                   <button id="submit" class="btn btn-success ml-auto" type="button" title="Send" onclick="allFunctions()" data-toggle="modal" data-target="#myModal">Solicitar Cotización</button>
                   </div>
                   <div class="form-check mt-4 checkbox-color text-center">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -316,8 +314,8 @@
        
       </div>
       <div class="modal-body">
-        <div id="resumen" class="text-center"></div>
-        <div id="resultado" class="text-center"></div>
+        <div id="resumen" class="text-center"></div> <!--Resumen del auto ingresado-->
+        <div id="resultado" class="text-center"></div> <!--Resultado del precio del seguro-->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>

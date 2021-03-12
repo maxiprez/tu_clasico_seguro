@@ -56,8 +56,8 @@ function validar() {
       return false;
     }
     
-    swal("Enviado!", "Se ha enviado el formulario con tus datos correctamente", "success");
-    return false;
+    return cotizarSeguro();
+   
 
 
     /*$.ajax({

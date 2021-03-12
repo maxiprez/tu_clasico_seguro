@@ -96,13 +96,11 @@ const calcularOrigen = origen => {
     return incremento;
 }
 
-const diferencia = (anio) =>{
 
+
+const diferencia = (anio) =>{
 return new Date().getFullYear()-anio;
 }
-
-
-
 
 
 

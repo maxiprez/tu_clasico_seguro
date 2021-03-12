@@ -1,6 +1,4 @@
-//Botones siguiente:
-
-
+//Botones siguiente para que funcionen con enter:
 $( "#formCar" ).keypress(function(event){
     if(event.keyCode == 13){
         $("#siguiente1").click();
@@ -57,7 +55,7 @@ $( document ).ready(function (){
 });
 
  function validarPersona(){
-     
+    
     if( $("#nombre").val().length > 0 &&
         $("#apellidos").val().length > 0 &&
         $("#edad").val().length > 0 &&
