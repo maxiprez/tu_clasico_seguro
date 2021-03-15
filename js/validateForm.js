@@ -185,6 +185,8 @@ function validar() {
 
 }
 
+
+
 //Formulario
 
 const DOMstrings = {
