@@ -19,8 +19,7 @@
     
     <!--Bootstrap-->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
-
+    
     <!--CSS Local-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -31,6 +30,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body class="container-fluid no-gutters">
+
+  
   
   <header class="header">
     <nav class="navbar navbar-expand-lg fixed-top py-3">
@@ -39,16 +40,16 @@
           
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-                  <li class="nav-item"><a href="#servicios" class="nav-link text-uppercase font-weight-bold">Servicios</a></li>
-                  <li class="nav-item"><a href="#caracteristicas" class="nav-link text-uppercase font-weight-bold">Características</a></li>
-                  <li class="nav-item"><a href="#header-title" class="nav-link text-uppercase font-weight-bold">Cotactanos</a></li>
-                  <li class="nav-item"><a href="#footer" class="nav-link text-uppercase font-weight-bold">Sobre Nosotros</a></li>
+                  <li class="nav-item active"><a href="#" id="homeButton" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"><a href="#servicios" id="serviciosButton" class="nav-link text-uppercase font-weight-bold">Servicios</a></li>
+                  <li class="nav-item"><a href="#caracteristicas" id="caracteristicasButton" class="nav-link text-uppercase font-weight-bold">Características</a></li>
+                  <li class="nav-item"><a href="#header-title" id="contactanosButton" class="nav-link text-uppercase font-weight-bold">Cotactanos</a></li>
+                  <li class="nav-item"><a href="#footer" id="sobreNosotrosButton" class="nav-link text-uppercase font-weight-bold">Sobre Nosotros</a></li>
               </ul>
           </div>
       </div>
   </nav>
-    <div class="pt-5 pb-5 mt-0 align-items-center d-flex ml-4">
+    <div id="headerTop" class="pt-5 pb-5 mt-0 align-items-center d-flex ml-4">
       <div class="container-header">
         <div class="row align-items-center d-flex justify-content-between">
           <div class="col-12 col-md-6 pb-5 order-2 order-sm-2">
@@ -88,25 +89,27 @@
     </div>
   </section>
 
-  <div id="caracteristicas" class="container caracteristicas-container">
-    <div class="caracteristicas-title text-center"><h2>Características</h2></div>
-    <div class="row d-flex justify-content-around">
-       <div class="col-sm-offset-2 col-sm-4">
-          <ul class="list-unstyled">
-            <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Antiguedad, a partir del año N-30 (N= Año en curso).</li>
-            <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Debe estar original o restaurado.</li>
-            <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Debe estar patentado.</li>
-          </ul>
-       </div>
-       <div class="col-sm-4">
-          <ul class="list-unstyled">
-             <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>El uso del vehículo debe ser moderado a bajo.</li>
-             <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Inspección previa obligatoria.</li>
-             <li class="list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Uso particular exclusivamente.</li>
-          </ul>
-       </div>
-    </div>
- </div>
+  <section id="caracteristicas" class="container caracteristicas-container">
+    <div>
+      <div class="caracteristicas-title text-center"><h2>Características</h2></div>
+      <div class="row d-flex justify-content-around">
+         <div class="col-sm-offset-2 col-sm-4">
+            <ul class="list-unstyled">
+              <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Antiguedad, a partir del año N-30 (N= Año en curso).</li>
+              <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Debe estar original o restaurado.</li>
+              <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Debe estar patentado.</li>
+            </ul>
+         </div>
+         <div class="col-sm-4">
+            <ul class="list-unstyled">
+               <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>El uso del vehículo debe ser moderado a bajo.</li>
+               <li class="mb-4 list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Inspección previa obligatoria.</li>
+               <li class="list-style"><span class="pr-2 check-list"><i class="fas fa-check"></i></span>Uso particular exclusivamente.</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+  </section>
 
 <div id="form-header" class="form-title">
   <h1 id="header-title" class="header__title">Formulario para Cotización</h1>
@@ -254,9 +257,9 @@
                    </div>
                   <div class="form-row mt-4">
                     <div class="col-12 col-sm-6">
-                      <input id="tel" class="multisteps-form__input form-control" type="tel" placeholder="Teléfono" required/>
+                      <input id="tel" class="multisteps-form__input form-control" type="tel" placeholder="Teléfono"  required/>
                       <div class="valid-feedback">Válido.</div>
-                      <div class="invalid-feedback">Por favor, completa este campo.</div>
+                      <div class="invalid-feedback">Ej: 11-2655-6633</div>
                     </div>
                     <div class="col-12 col-sm-6 mt-4 mt-sm-0">
                       <input id="eMail" class="multisteps-form__input form-control" type="email" placeholder="E-mail" required/>
@@ -316,6 +319,12 @@
       <div class="modal-body">
         <div id="resumen" class="text-center"></div> <!--Resumen del auto ingresado-->
         <div id="resultado" class="text-center"></div> <!--Resultado del precio del seguro-->
+        <div id="errorEdad" class="text-center"></div>
+        <div id="errorEmail" class="text-center"></div>
+        <div id="errorTel" class="text-center"></div>
+        <div id="errorLongTel" class="text-center"></div>
+        <div id="errorNombre" class="text-center"></div>
+        <div id="errorApellido" class="text-center"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -334,9 +343,9 @@
                   <div class="col-sm-6 col-md-3 item">
                       <h3>Servicios</h3>
                       <ul>
-                          <li><a href="#">Cotización 100% Online</a></li>
-                          <li><a href="#">Diferentes tipos de coberturas</a></li>
-                          <li><a href="#">Planes según tu necesidad</a></li>
+                          <li>Cotización 100% Online</li>
+                          <li>Diferentes tipos de coberturas</li>
+                          <li>Planes según tu necesidad</li>
                       </ul>
                   </div>
                   <div class="col-sm-6 col-md-3 item">
@@ -361,8 +370,8 @@
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Scripts locales -->
-    
     <script src="js/scroll.js" defer></script>
     <script src="js/validateForm.js" defer></script>
     <script src="js/object.js" defer></script>
@@ -374,6 +383,7 @@
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!--sweetAlert-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>

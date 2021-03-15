@@ -359,3 +359,13 @@ ul li {
   opacity: 0.3;
   font-size: 13px;
   margin-bottom: 0; }
+
+.fa-exclamation-triangle {
+  font-size: 4rem;
+  color: yellow;
+  margin-bottom: 1rem; }
+
+.fa-check-circle {
+  font-size: 4rem;
+  color: #2bc72b;
+  margin-bottom: 1rem; }

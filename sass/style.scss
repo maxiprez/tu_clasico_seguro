@@ -1,3 +1,7 @@
+html{
+  //scroll-behavior: smooth;
+}
+
 .no-gutters{
 padding-right: 0px !important;
 padding-left: 0px !important;
@@ -101,7 +105,7 @@ ul {
 
 .caracteristicas-title {
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 4rem !important;
+   margin-bottom: 4rem !important;
   font-size: 4rem !important;
 }
 
@@ -438,3 +442,19 @@ ul {
       font-size:13px;
       margin-bottom:0;
     }
+
+    .fa-exclamation-triangle{
+      font-size: 4rem;
+      color: rgb(255, 255, 0);
+      margin-bottom: 1rem;
+
+    }
+
+    .fa-check-circle{
+      font-size: 4rem;
+      color: rgb(43, 199, 43);
+      margin-bottom: 1rem;
+    }
+
+
+   

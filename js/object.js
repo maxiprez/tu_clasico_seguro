@@ -11,10 +11,10 @@ let autoInfo = JSON.parse(localStorage.getItem("autoInfo"));
         this.anio = anio;
         this.dominio = dominio;
         }
-  let  marcaNew = document.getElementById("marca").value;
-  let  modeloNew = document.getElementById("modelo").value;
-  let  anioNew = document.getElementById("anio").value;
-  let  dominioNew = document.getElementById("dominio").value;
+  let  marcaNew = $("#marca").val();
+  let  modeloNew = $("#modelo").val();
+  let  anioNew = $("#anio").val();
+  let  dominioNew = $("dominio").val();
 
   nuevoAuto = new Auto(marcaNew, modeloNew, anioNew, dominioNew); //variable global dentro de la funcion
   console.log(nuevoAuto);

@@ -12,7 +12,7 @@ const selectYears = document.getElementById('anio');
     }
 
 // Funcion cotizacion del seguro
-const cotizarSeguro=()=>{
+function cotizarSeguro(){
  let marca = document.getElementById("marca").value;
  let modelo = document.getElementById("modelo").value;
  let anio = document.getElementById("anio").value;
@@ -30,7 +30,8 @@ let cotizacion = {origen, anio, plan};
 divResumen.style.backgroundColor = "#FFF";
 divResumen.style.display = "block";
 
-divResumen.innerHTML = `<h4 class="mb-4">Resumen de la cotización</h4>
+divResumen.innerHTML = `<i class="far fa-check-circle"></i>
+                    <h4 class="mb-4">Resumen de la cotización</h4>
                         <ul>
                             <li><strong>Marca:</strong> ${mayuscula(marca)}</li>
                             <li><strong>Modelo:</strong> ${mayuscula(modelo)}</li>
@@ -52,7 +53,7 @@ divResultado.innerHTML = `<p class="text-center"><strong>Precio Final:</strong> 
 
 
 // Funcion principal para el calculo del precio seguro
-const cotizar =(cotizacion)=>{
+function cotizar (cotizacion) {
  const {origen, anio, plan} = cotizacion;
 
  let resultado = 3000;
@@ -71,7 +72,7 @@ const cotizar =(cotizacion)=>{
 }
 
 // Esto hace que se incremente un % el precio dependiendo del plan
-const obtenerPlan = plan => {
+function obtenerPlan  (plan) {
     let costoPlan;
    switch (plan){
        case 'basico': costoPlan = 1.20; break;
@@ -83,7 +84,7 @@ return costoPlan;
 }
 
 // Este calculo incremente un % dependiente si es o no un auto nacional
-const calcularOrigen = origen => {
+function calcularOrigen (origen) {
     let incremento;
 
     switch (origen){
@@ -98,13 +99,13 @@ const calcularOrigen = origen => {
 
 
 
-const diferencia = (anio) =>{
+function diferencia  (anio) {
 return new Date().getFullYear()-anio;
 }
 
 
 
 // Para que la primer letra aparezca en mayús
-const mayuscula = (palabra) =>{
+function mayuscula  (palabra) {
     return palabra.charAt(0).toUpperCase()+palabra.slice(1);
  }

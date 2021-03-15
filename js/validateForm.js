@@ -2,26 +2,31 @@
 function validar() {
     
  //Datos del vehículo:
- let marca = document.getElementById("marca").value;
- let modelo = document.getElementById("modelo").value;
- let anio = document.getElementById("anio").value;
- let dominio = document.getElementById("dominio").value;
- let importado = document.getElementById("autoImportado").value;
+ let marca = $("#marca").val();
+ let modelo = $("#modelo").val();
+ let anio = $("#anio").val();
+ let dominio = $("#dominio").val();
+ let importado = $("#autoImportado").val();
    
  //Datos personales y de contacto:
- let nombre = document.getElementById("nombre").value;
- let apellidos = document.getElementById("apellidos").value;
- let edad = document.getElementById("edad").value;
- let dni = document.getElementById("dni").value;
- let provincia = document.getElementById("provincia").value;
- let localidad = document.getElementById("localidad").value;
- let tel = document.getElementById("tel").value;
- let eMail = document.getElementById("eMail").value;
+ let nombre = $("#nombre").val();
+ let apellidos = $("#apellidos").val();
+ let edad = $("#edad").val();
+ let dni = $("#dni").val();
+ let provincia = $("#provincia").val();
+ let localidad = $("#localidad").val();
+ let tel = $("#tel").val();
+ let eMail = $("#eMail").val();
 
- let modal = document.getElementById("myModal");
-    
-
+ 
     expresion = /\w+@\w+\.+[a-z]/;
+
+    let divErrorEdad = document.getElementById("errorEdad");
+    let divErrorEmail = document.getElementById("errorEmail");
+    let divErrorTel = document.getElementById("errorTel");
+    let divErrorLongTel = document.getElementById("errorLongTel");
+    let divErrorNombre = document.getElementById("errorNombre");
+    let divErrorApellido = document.getElementById("errorApellido");
 
     if(marca === "" || modelo ==="" || anio === "" || dominio === "" || apellidos === "" ||
     edad === "" || dni === "" || provincia ==="" || localidad === "" || tel === ""
@@ -30,33 +35,129 @@ function validar() {
        swal ( "Error!" ,  "Todos los campos son obligatorios" ,  "error" );
        return false;
     } else if(nombre.length > 30){
-        swal ( "Error!" ,  "El nombre es muy largo" ,  "error" );
+        //Se ocultan los resultados
+        document.getElementById("resumen").style.display = "none";
+        document.getElementById("resultado").style.display = "none";
+        divErrorEdad.style.display = "none";
+        divErrorEmail.style.display = "none";
+        divErrorTel.style.display = "none";
+        divErrorLongTel.style.display = "none";
+        divErrorApellido.style.display = "none";
+
+        //Se muestra el error
+        divErrorNombre.style.display = "block";
+        divErrorNombre.innerHTML = `<i class="fas fa-exclamation-triangle"></i>
+                                  <h4>Su nombre es muy largo.</h4>
+                                  <p>Por favor, ingrese su nombre correctamente.</p>`;
         return false;
     }
     else if(apellidos.length > 80){
-        swal ( "Error!" ,  "Los apellidos son muy largos" ,  "error" );
+        //Se ocultan los resultados
+        document.getElementById("resumen").style.display = "none";
+        document.getElementById("resultado").style.display = "none";
+        divErrorEdad.style.display = "none";
+        divErrorEmail.style.display = "none";
+        divErrorTel.style.display = "none";
+        divErrorLongTel.style.display = "none";
+        divErrorNombre.style.display = "none";
+
+        //Se muestra el error
+        divErrorApellido.style.display = "block";
+        divErrorApellido.innerHTML = `<i class="fas fa-exclamation-triangle"></i>
+                                  <h4>Su apellido es muy largo.</h4>
+                                  <p>Por favor, ingrese su apellido correctamente.</p>`;
         return false;
     }
     
     else if(tel.length > 11){
-        swal ( "Error!" ,  "El teléfono es muy largo" ,  "error" );
+       //Se ocultan los resultados
+       document.getElementById("resumen").style.display = "none";
+       document.getElementById("resultado").style.display = "none";
+       divErrorEdad.style.display = "none";
+       divErrorEmail.style.display = "none";
+       divErrorTel.style.display = "none";
+       divErrorNombre.style.display = "none";
+       divErrorApellido.style.display = "none";
+       
+
+       //Se muestra el error
+       divErrorLongTel.style.display = "block";
+       divErrorLongTel.innerHTML = `<i class="fas fa-exclamation-triangle"></i>
+                                 <h4>Longitud de teléfono incorrecta.</h4>
+                                 <p>Por favor, asegurese de haber ingresado su código de área sin cero (0) y su número de celular sin 15.</p>`;
         return false;
     }
     else if(isNaN(tel)){
-        swal ( "Error!" ,  "El teléfono ingresado no es un número" ,  "error" );
+
+        //Se ocultan los resultados
+        document.getElementById("resumen").style.display = "none";
+        document.getElementById("resultado").style.display = "none";
+        divErrorEdad.style.display = "none";
+        divErrorEmail.style.display = "none";
+        divErrorLongTel.style.display = "none";
+        divErrorNombre.style.display = "none";
+        divErrorApellido.style.display = "none";
+
+        //Se muestra el error
+        divErrorTel.style.display = "block";
+        divErrorTel.innerHTML = `<i class="fas fa-exclamation-triangle"></i>
+                                  <h4>Ingrese un teléfono válido.</h4>
+                                  <p>Por favor, asegurese de haber ingresado un número de teléfono válido.</p>`;
+
+        
         return false;
-    }
+    } 
+
     else if(!expresion.test(eMail)){
-        swal ( "Error!" ,  "Ingrese un correo válido" ,  "error" );
+
+        //Se ocultan los resultados
+      document.getElementById("resumen").style.display = "none";
+      document.getElementById("resultado").style.display = "none";
+        divErrorEdad.style.display = "none";
+        divErrorLongTel.style.display = "none";
+        divErrorNombre.style.display = "none";
+        divErrorApellido.style.display = "none";
+        divErrorTel.style.display = "none";
+
+      //Se muestra el error
+      divErrorEmail.style.display = "block";
+      divErrorEmail.innerHTML = `<i class="fas fa-exclamation-triangle"></i>
+                                <h4>Ingrese un e-mail válido.</h4>
+                                <p>Asegurese de haber ingresado un e-mail válido.</p>`;
+
         return false;
-    }
+    } 
+
     else if(edad < 18){
-     modal.hidden = true;
-      swal ( "Error!" ,  "Debe ser mayor de 18 años" ,  "error" );
-      return false;
+     
+      //Se ocultan los resultados
+      document.getElementById("resumen").style.display = "none";
+      document.getElementById("resultado").style.display = "none";
+      divErrorEmail.style.display = "none";
+      divErrorLongTel.style.display = "none";
+      divErrorNombre.style.display = "none";
+      divErrorApellido.style.display = "none";
+      divErrorTel.style.display = "none";
+
+      //Se muestra el error
+      divErrorEdad.style.display = "block";
+      divErrorEdad.innerHTML = `<i class="fas fa-exclamation-triangle"></i>
+                                <h4>Debe ser mayor de 18 años.</h4>
+                                <p>Usted debe tener la mayoría de edad para la contratación del seguro.</p>`;
+     
+      
+       return false;
+    } else {
+      divErrorEdad.style.display = "none";
+      divErrorEmail.style.display = "none";
+      divErrorTel.style.display = "none";
+      divErrorLongTel.style.display = "none";
+      divErrorNombre.style.display = "none";
+      divErrorApellido.style.display = "none";
     }
     
     return cotizarSeguro();
+    
    
 
 

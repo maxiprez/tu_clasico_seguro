@@ -62,13 +62,16 @@ $( document ).ready(function (){
         $("#dni").val().length > 0 &&
         $("#provincia").val().length > 0 &&
         $("#localidad").val().length > 0 &&
-        $("#eMail").val().length > 0 &&
-        $("#tel").val().length > 0 ) {
+        $("#eMail").val().length > 0) {
         $( "#siguiente2" ).prop( "disabled", false);  
         $( "#messageInfoButton" ).prop("disabled", false);  
+       
     } else{
         $( "#siguiente2" ).prop( "disabled", true);
         $( "#messageInfoButton" ).prop("disabled",true);
+        
     }
  }
+
+
 
