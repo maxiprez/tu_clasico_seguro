@@ -46,9 +46,6 @@ divResumen.innerHTML = `<i class="far fa-check-circle"></i>
 let cotizacionFinal = cotizar(cotizacion);
 divResultado.style.display = "block";
 divResultado.innerHTML = `<p class="text-center"><strong>Precio Final:</strong> $${cotizacionFinal}</p>`;
-                
-
-
 }
 
 
