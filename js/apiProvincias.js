@@ -8,6 +8,5 @@ $(document).ready(function(){
             $("#provincia").append(option);
             
             });
-            //console.log(data.provincias);
         });
     });
